@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Quiz10</title>
+    <style>
+        html, body{
+            background-color: #02233b;
+            height: 100%;
+        }
+        #container{
+            background-color: white;
+            border: 2px solid;
+            width:50%;
+            margin: 0 auto;
+            height: 100%;
+            background-image: url('bg1.jpg');
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* 실행을 하니 백그라운드 이미지가 div 태그 안에 표시 되지 않고, body, 즉 웹 브라우저의 왼쪽 하단에 고정되는 결과가 발생했다. 이는 background-attachment: fixed 사용시 해당 박스요소에 고정되는 것이 아닌 뷰포트에 고정되기 때문이다.*/
+        }
+        h1{
+            background-color: #004344;
+            color: white;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        ul{
+            list-style-type: none;
+            margin: 5px 3%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style="text-align: center;"><strong>대학언론사 수습기자 모집</strong></h1>
+        <h2 style="font-style: italic; text-align: center;">신입생 여러분들을 기다립니다</h2>
+        <h3 style="color: red; margin: 20px;">모집분야</h3>
+        <ul>
+            <li>아나운서</li>
+            <li>오프닝쇼프로듀서</li>
+            <li>엔지니어</li>
+        </ul>
+
+    </div>
+</body>
+</html>
