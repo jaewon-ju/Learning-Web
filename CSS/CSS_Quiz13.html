@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Quiz13</title>
+
+    <style>
+        li{
+            float: left;
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            list-style: none;
+            background-color: grey;
+            text-align:center;
+            line-height: 50px;
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: ease-in;
+        }
+        ul li:hover{
+            background: #ffffffee;
+        }
+        ul li:nth-child(6):hover{
+            background-color: #b30000;
+            color: #fff;
+        }
+        ul li:active{
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+
+    </ul>
+</body>
+</html>
