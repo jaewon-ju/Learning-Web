@@ -1,0 +1,56 @@
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    box-sizing: border-box;
+    grid-template-areas: 
+        "box1 box1"
+        "box2 box2"
+        "navi ."
+        "navi ."
+    ;
+    margin: auto auto;
+}
+.box1{
+    grid-area: box1;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.box2{
+    grid-area: box2;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.box3, .box4{
+    opacity: 0;
+}
+#toggle:checked ~ .box4{
+    opacity: 1;
+}
+.navi{
+    grid-area: navi;
+    border: 1px solid green;
+    box-sizing: border-box;
+    padding: 0px 0px;
+}
+.navi ul{
+    margin: 0 10vw;
+    height: 50vh;
+    list-style-type: none;
+    box-sizing: border-box;
+    padding: 0px 0px;
+}
+.navi li{
+    height: 12.5vh;
+    line-height: 12.5vh;
+    text-align: center;
+    transition-duration: 1s;
+    border: 1px green solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.navi li:hover{
+    transform: scale(1.5);
+}
