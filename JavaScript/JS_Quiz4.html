@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Quiz4</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt("첫 번째 숫자 입력"));
+        let num2 = parseInt(prompt("두 번째 숫자 입력"));
+
+        compare(num1, num2);
+        function compare(x, y){
+            if(x > y){
+                alert(x + "(이)가 " + y + " 보다 더 큽니다.");
+            } else if(x < y){
+                alert(y + "(이)가 " + x + " 보다 더 큽니다.");
+            } else {
+                alert(x + "(과)와 " + y + " (은)는 같습니다.");
+            }
+        }
+    </script>
+</body>
+</html>
