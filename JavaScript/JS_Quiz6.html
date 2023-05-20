@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Quiz6</title>
+</head>
+<body>
+    <button id="popUp">버튼을 클릭하세요</button>
+    <script>
+        let popUpBttn = document.querySelector("#popUp");
+        popUpBttn.onclick = function(){
+            let w = 400;
+            let h = 200;
+            let left = (screen.availWidth - w) / 2;
+            let top = (screen.availHeight - h) / 2;
+
+            let center = "width = " + w + ", height = " + h + ", left = " + left + ", top = " + top;
+            document.write(center);
+            window.open("JS_Quiz5.html", "현재 시각", center);
+        };
+    </script>
+</body>
+</html>

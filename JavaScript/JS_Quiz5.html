@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS_Quiz5</title>
+        <style>
+            .display{
+                font-size: large;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>현재 시각 <span id="current" class="display"></span></p>
+        <script>
+            setInterval(displayNow, 1000);
+            
+
+            function displayNow(){
+                let time = new Date();
+                currentTime = time.toLocaleString();
+                document.querySelector("#current").innerHTML = currentTime;
+            }
+        </script>
+    </body>
+</html>
